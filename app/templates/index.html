@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block content %}
+     <h3> top news</h3>
+     <ul>
+       {{ macro.displayNewsList(top}}
+     </ul>
+
+     <h3> populer_news </h3>
+     <ul>
+       {{ macro.displayNewsList(populer)}}
+    </ul>
+
+    <h3>latest news</h3>
+       <ul>
+         {{ macro.displayNewsList(latest)}}
+      </ul>
+{% endblock%}
+{% block content %}
+
+   <div class="container">
+      <form>
+          <input type="text" name="news_query" placeholder="Search for a news  article" class="form-control">
+          <input type="submit"  value="Submit" class="btn btn-default">
+      </form>
+
+   </div>
+{% endblock%}
