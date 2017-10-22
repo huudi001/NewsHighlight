@@ -8,3 +8,4 @@ class News:
         self.url = url
         self.url_to_image = 'https://newsapi.org//t/p/w500'+url_to_image
         self.published_at = published_at
+mmmmm
