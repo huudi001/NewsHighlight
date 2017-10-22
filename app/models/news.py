@@ -1,4 +1,5 @@
 class News:
+    #class that defines news objects
     def __init__(self,source,author,title,description,url,url_to_image,published_at):
 
         self.source = source
