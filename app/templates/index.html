@@ -2,28 +2,27 @@
 {% import 'macros.html' as macro%}
 
 {% block content %}
-     <h3> top news</h3>
+     <h3> Business</h3>
      <ul>
-       {{ macro.displayNewsList(top}}
+       {{ macro.displayNewsList(business) }}
      </ul>
 
-     <h3> populer_news </h3>
+     <h3> Entertainment </h3>
      <ul>
-       {{ macro.displayNewsList(populer)}}
+       {{ macro.displayNewsList(entertainment) }}
     </ul>
 
-    <h3>latest news</h3>
+    <h3>Politics</h3>
        <ul>
-         {{ macro.displayNewsList(latest)}}
+         {{ macro.displayNewsList(politics) }}
       </ul>
-{% endblock%}
-{% block content %}
+    <h3>Sports</h3>
+     <ul>
+       {{macro.displayNewsList(sport) }}
+    </ul>
+    <h3>Technology</h3>
+       <ul>
+         {{macro.displayNewsList(technology) }}
+      </ul>
 
-   <div class="container">
-      <form>
-          <input type="text" name="news_query" placeholder="Search for a news  article" class="form-control">
-          <input type="submit"  value="Submit" class="btn btn-default">
-      </form>
-
-   </div>
 {% endblock%}
